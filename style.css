@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-regular {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* shared styles */
+
+  main {
+    max-width: 1440px;
+    margin:0 auto;
+  }
+  
+  .display-flex {
+    display:flex;
+  }
+
+  .dark-1 {
+    color:#131313;
+  }
+  .dark-2 {
+    color:#424242;
+  }
+  .dark-3 {
+    color:#727272;
+  }
+
+  .bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+
+  main>section {
+    margin-top:130px;
+  }
+
+  /* header related style */
+
+
+  /* nav-bar related related */
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .brand {
+    font-size: 2.8rem;
+    font-weight: 700;
+  }
+
+  .nav-links {
+
+    justify-content: space-between;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+  .nav-item {
+    list-style: none;
+    margin-right:30px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+  }
+
+  .navbar, .banner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .banner-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .btn-primary {
+    background-color: #FF900E;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    border:none;
+    border-radius: 8px;
+    color:white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+
+  }
+
+  .banner-image {
+    width:100%;
+    margin-bottom: 30px;
+  }
+
+
+
+  /* Team and features related styles */
+
+  .teams {
+    align-items: center;
+  }
+
+  .team-img-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:24px;
+  }
+
+
+  .our-features {
+    margin-left:75px;
+    max-width:540px;
+  }
+
+  .feature-title {
+    font-size: 2.8rem;
+  }
+
+  .quick-list {
+    font-weight: 400;
+  }
+
+  .feature {
+    color:#FF900E;
+  }
+
+  .feature-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+
+  /* Responsive Media Quary */
+
+@media screen and (max-width:576px) {
+
+    .nav-links, .navbar {
+        flex-direction: column;
+    }
+
+    .team-img-container {
+        grid-template-columns: 1fr;
+        gap:24px;
+      }
+    
+      .teams {
+        flex-direction: column;
+      }
+
+      .our-features {
+        margin-left: 5px;
+    }
+}
+
+
+/* For Tablet Display */
+
+@media screen and (min-width:576px) and (max-width:974px) {
+
+    
+    .teams {
+        flex-direction: column;
+      }
+
+      .our-features {
+        margin-left: 5px;
+
+    }
+
+}
